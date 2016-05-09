@@ -1,0 +1,18 @@
+<div class="container">
+  <a href="#/">Link to Main Page</a>
+  <a href="#/">Link to Result Page</a>
+  <div class="col-sm-12">
+    <div class="card">
+      <h4>{{results.data.question}}</h4>
+      <small class="pull-right">{{results.data.votes}} defa oylandı.</small>
+      <div class="option" ng-repeat="option in results.data.options">
+        <p class="btn btn-default">{{option.text}} | {{option.count}} Oy</p>
+      </div>
+      <footer>
+        <div class="clearfix"></div>
+        <small class="pull-left">Etiketler: <a href="#/{{results.data.tag}}">{{results.data.tag}}</a></small>
+      </footer>
+    </div>
+  </div>
+</div>
+</div>

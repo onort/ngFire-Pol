@@ -1,0 +1,18 @@
+<div class="container">
+  <a href="#/">Link to Main Page</a>
+  <a href="#/results/{{poll.data.$id}}">Link to Result Page</a>
+  <div class="col-sm-12">
+    <div class="card">
+      <h4>{{poll.data.question}}</h4>
+      <small class="pull-right">{{poll.data.votes}} defa oylandı.</small>
+      <div class="option" ng-repeat="option in poll.data.options">
+        <p class="btn btn-default" ng-click="poll.vote($index)">{{option.text}}</p>
+      </div>
+      <footer>
+        <div class="clearfix"></div>
+        <small class="pull-left">Etiketler: <a href="#/{{poll.data.tag}}">{{poll.data.tag}}</a></small>
+      </footer>
+    </div>
+  </div>
+</div>
+</div>

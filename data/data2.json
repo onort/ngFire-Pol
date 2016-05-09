@@ -1,0 +1,107 @@
+
+{
+  "polls":
+  {
+    "poll1":
+    {
+      "uid": 1,
+      "question": "2015-2016 sezonu Spor-Toto Süperlig şampiyonu hangisi olur?",
+      "tag": "spor",
+      "isPublic": true,
+      "votes": 182,
+      "options":
+      {
+        "option1":
+        {
+          "text": "Beşiktaş",
+          "count": 127,
+          "id": 1
+        },
+        "option2":
+        {
+        "text": "Fenerbahçe",
+        "count": 55,
+        "id": 2
+        }
+      }
+    },
+    "poll2":
+    {
+      "uid": 2,
+      "question": "Başkanlık sistemini destekliyor musunuz?",
+      "tag": "siyaset",
+      "isPublic": true,
+      "votes": 273,
+      "options":
+      {
+        "option1":
+        {
+          "text": "Evet, destekliyorum.",
+          "count": 66,
+          "id": 1
+        },
+        "option2":
+        {
+        "text": "Hayır, desteklemiyorum.",
+        "count": 122,
+        "id": 2
+        },
+        "option3":
+        {
+        "text": "Kararsızım.",
+        "count": 46,
+        "id": 3
+        },
+        "option4":
+        {
+        "text": "İlgilenmiyorum.",
+        "count": 39,
+        "id": 4
+        }
+      }
+
+    },
+    "poll3":
+    {
+      "uid": 3,
+      "question": "1 Kasım seçimlerinde hangi partiy oy verdiniz?",
+      "tag": "siyaset",
+      "isPublic": true,
+      "votes": 190,
+      "options":
+      {
+        "option1":
+        {
+          "text": "AKP",
+          "count": 31,
+          "id": 1
+        },
+        "option2":
+        {
+        "text": "CHP",
+        "count": 88,
+        "id": 2
+        },
+        "option3":
+        {
+        "text": "HDP.",
+        "count": 40,
+        "id": 3
+        },
+        "option4":
+        {
+        "text": "MHP",
+        "count": 20,
+        "id": 4
+        },
+        "option5":
+        {
+        "text": "Diğer",
+        "count": 5,
+        "id": 5
+        }
+      }
+
+    }
+  }
+}

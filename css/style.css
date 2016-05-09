@@ -1,0 +1,31 @@
+.container {
+  max-width: 1000px;
+  margin: 10px auto;
+  padding: 20px;
+}
+
+h4 {
+  line-height: 1.5em;
+  margin-bottom: 30px;
+}
+
+small {
+  color: rgb(171, 171, 171);
+}
+
+small a,
+small a:hover {
+  color: inherit;
+}
+
+
+.label {
+  margin-left: 5px;
+}
+
+.card {
+  padding: 20px;
+  background-color: rgb(247, 247, 247);
+  margin-bottom: 20px;
+  min-height: 180px;
+}

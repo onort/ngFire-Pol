@@ -1,0 +1,30 @@
+<div class="container">
+  <h3>Bir oyalama yaratın</h3>
+  <a href="#/" class="btn btn-default">Anasayfa</a>
+  <hr />
+  <form>
+    <div class="form-group">
+      <label for="add1">Oylamak istediğiniz</label>
+      <input type="text" class="form-control" id="add1" ng-model="add.poll.question" placeholder="Sormak istediğinizi buraya yazın">
+    </div>
+    <div class="form-group">
+      <label for="add4">Kategori</label>
+      <select type="text" class="form-control" id="add4" ng-model="add.poll.tag" ng-options="category for category in add.categories"></select>
+    </div>
+    <div class="form-group" ng-repeat="option in add.poll.options">
+        <label>Seçenek</label>
+        <input type="text" class="form-control" ng-model="option.text" placeholder="Seçenek ekle">
+        <i ng-click="add.removeOption(option.id)"
+            class="vertical-align glyphicon-large glyphicon glyphicon-remove-sign"></i>
+    </div>
+    <div class="form-group">
+      <button class="btn btn-warning" ng-click="add.addOption()">Bir seçenek ekle</button>
+    </div>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" ng-model="add.poll.isPublic"> Özel Oylama
+      </label>
+    </div>
+    <button type="submit" class="btn btn-default" ng-click="add.addPollToPolls()">Ekle</button>
+  </form>
+</div>

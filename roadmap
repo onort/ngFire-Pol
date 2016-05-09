@@ -1,0 +1,10 @@
+Roadmap for poll app:
+
+-- DONE     Add voting functionality
+-- REMOVED  Filtering options for polls on main page
+Result page connection on main page
+Force tag selection
+Before adding to db check if poll has at least 2 options.
+Cookie or anonymous auth to prevent voting if you've voted.
+(optional)  Add charts
+(optional)  Add pics to poll
