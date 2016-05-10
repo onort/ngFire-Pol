@@ -6,20 +6,30 @@
     function AddController($location, AddPoll) {
         var vm = this;
         vm.addPollToPolls = addPollToPolls;
-        vm.categories = ['spor', 'siyaset'];
+        vm.categories = ['Spor', 'Siyaset', 'Diğer'];
         vm.addOption = addOption;
         vm.removeOption = removeOption
         vm.poll = {
           question: vm.question,
           tag: vm.tag,
           votes: 0,
-          isPublic: !vm.isPublic,
+          isPrivate: vm.isPrivate,
           options: []
         };
 
         function addPollToPolls() {
-          AddPoll.addPollToPolls(vm.poll);
-          vm.question = "", vm.options = [], vm.tag = "", vm.isPublic = false;
+          if (vm.poll.question && vm.poll.tag !== undefined && vm.poll.options.length > 1) {
+            AddPoll.addPollToPolls(vm.poll);
+            vm.poll.question = "", vm.poll.options = [], vm.poll.tag = "", vm.poll.isPrivate = false;
+            alert('Oylama başarıyla eklendi!')
+          } else if (vm.poll.tag == undefined){
+            alert('Lütfen bir kategori seçin');
+          } else if (vm.poll.options.length <= 1) {
+            alert('Lütfen en az iki seçenek ekleyin')
+          } else if (vm.poll.question == undefined) {
+            alert('Lütfen bir soru ekleyin')
+          }
+
         }
 
         function addOption() {

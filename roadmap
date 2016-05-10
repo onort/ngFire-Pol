@@ -2,9 +2,15 @@ Roadmap for poll app:
 
 -- DONE     Add voting functionality
 -- REMOVED  Filtering options for polls on main page
-Result page connection on main page
-Force tag selection
-Before adding to db check if poll has at least 2 options.
-Cookie or anonymous auth to prevent voting if you've voted.
-(optional)  Add charts
+-- DONE     Result page connection on main page
+-- DONE     Force tag selection
+-- DONE     Implement client-side form control
+-- DONE     Before adding to db check if poll has at least 2 options.
+-- TODO     Cookie or anonymous auth to prevent voting if you've voted.
+-- DONE     Redirect to results after voting
+-- TODO     Thank for voting with a disappearing modal
+(optional)  Add charts (with JS library or CSS)
 (optional)  Add pics to poll
+-- TODO     Fix CSS
+-- TODO     Add label to polls (tag, new, popular etc)
+(optional)  Show poll name or uid on url bar instead of timestamp

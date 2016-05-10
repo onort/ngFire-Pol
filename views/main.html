@@ -11,9 +11,9 @@
         <h4>{{poll.question}}<span class="label label-success">Yeni</span></h4>
         <footer>
           <div class="btn-group pull-right" role="group">
-            <button class="btn btn-default" type="button">
-              Sonuçlara bak <span class="badge">{{poll.voted}}</span>
-            </button>
+            <a href="#/results/{{poll.$id}}" class="btn btn-default">
+              Sonuçlara bak <span class="badge">{{poll.votes}}</span>
+            </a>
             <a href="#/poll/{{poll.$id}}"><button type="button" class="btn btn-info">Oyla</button></a>
           </div>
           <div class="clearfix"></div>
